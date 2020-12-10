@@ -1,0 +1,11 @@
+version: '3.7'
+services:
+  my_last_container1:
+    image: "diaconovi/hello-world:0.9"
+    ports:
+      - "8030:8000"
+    volumes:
+      - my_other_volume:/www/
+
+volumes:
+  my_other_volume:
